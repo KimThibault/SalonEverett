@@ -1,0 +1,66 @@
+
+
+@font-face{
+	/* font-family: Reef; */
+	/* src: local('Reef'), url('reef-webfont.woff'), url('reef-webfont.woff') format('woff'); */
+	font-family: 'Moon Bold';
+	src: local('Moon'), url('Moon Bold.otf'), url('Moon Bold.otf') format('otf') ; 
+}
+
+@font-face{
+	/* font-family: Reef; */
+	/* src: local('Reef'), url('reef-webfont.woff'), url('reef-webfont.woff') format('woff'); */
+	font-family: 'Moon Light';
+	src: local('Moon'), url('Moon Light.otf'), url('Moon Light.otf') format('otf') ; 
+}
+
+
+h1{
+	text-align:center;
+	font-family: 'Moon Bold', monospace; 
+	margin: 40pt 40pt 20pt 40pt;	
+	padding: 30pt;
+	font-size: 64pt;	
+	font-weight:900;
+	color:#ffcc00;
+	border-color:#ffcc00;
+}
+
+h2{
+	text-align:center;
+	font-family: 'Moon Bold', monospace; 
+	font-weight:500;
+	/* margin: 10pt 40pt 20pt 40pt; */
+	width: 70%; margin: 30px auto;
+	padding: 30pt;
+	font-size: 32pt;
+	color:#ff9900;
+	border-color:#ff9900;	
+}
+
+h3{
+	text-align:center;
+	font-family: 'Moon Bold', monospace; 
+	font-weight:100;
+	/* margin: 10pt 40pt 20pt 40pt;	 */
+	width: 50%; margin: 30px auto;
+	padding: 30pt;
+	font-size:24pt;
+	color:#ff6600;
+	border-color:#ff6600;	
+}
+
+p{
+	margin: 20pt 40pt 40pt 40pt;	
+	padding:10pt;
+	text-align:center;
+	color:#ff3300;
+	border-color:#ff3300;	
+}
+ 
+ .roundedborder{
+	border-style:solid;
+	border-radius:10px;
+	border-width: 5px;
+	
+ }
