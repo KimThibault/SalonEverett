@@ -1,5 +1,7 @@
 
 
+<!doctype html>
+
 <html>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
@@ -9,7 +11,7 @@
 	    <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" type="text/css"   href="bootstrap.css" />
-        <link rel="stylesheet" href="stylesSalonEverett.css" type="text/css"/>		
+        <link rel="stylesheet" href="css/stylesSalonEverett.css" type="text/css"/>		
 		<link href='https://fonts.googleapis.com/css?family=Roboto|Montserrat|Source+Sans+Pro|Droid+Serif|Open+Sans|Lato|Raleway|PT+Sans|Oxygen|Droid+Sans|Poiret+One' rel='stylesheet' type='text/css'>
 		<title> Salon Everett </title>			
     </head>
@@ -17,14 +19,19 @@
     <body>
 		
 	
-		<h1>Salon Everett</h1>		
+		<h1>SALON EVERETT</h1>		
 		
+		<h3>MUSIC, DRINKS, PEOPLE</h3>
 		
 		<div class="container">
-			<h3>Music, drinks, people</h3>
+			<img class="img-circle medium-img-circle" id="disappearing-cat" src="Images/Danglars_550x550.png">
+		</div>
+		
+		<div class="container">
+			
 
 			<div class="row"> 
-				<div class="col-md-3 thin_border grow">					
+				<div class="menu-item odd col-md-3 thin_border grow">					
 					<a href="cocktail_menu.html"> <h2> Cocktails </h2>
 					<ul>
 						<li>Gin cocktails</li>
@@ -34,47 +41,85 @@
 					</ul> </a>
 				</div>
 				
-				<div class="col-md-3 thin_border grow">
+				<div class="menu-item even col-md-3 thin_border grow">
 					<a href="food_menu.html"> <h2> Food </h2>				
 					<ul>
 						<li>Mac and cheese</li>
-						<li>Poutine</li>						
+						<li>Poutine</li>	
+						<li>Grilled cheese sandwiches</li>
 						<li>Cheesecake</li>
 						<li>Tiny cupcakes</li>
 					</ul> </a>
 					
 				</div>
 				
-				<div class="col-md-3 thin_border grow">
+				<div class="menu-item odd col-md-3 thin_border grow">
 					<a href="events.html"> <h2> Events </h2>
 					<ul>
 						<li>Parties</li>
+						<li>Five o'clock tea</li>
+						<li>Jamming on the balcony</li>
 					</ul> </a>
 				</div>	
 				
-				<div class="col-md-3 thin_border grow">
+				<div class="menu-item even col-md-3 thin_border grow">
 					<a> </a> <h2> Cats </h2>
 					<ul>
 						<li>Warhol cats</li>
 						<li>Live cat</li>
+						<img class="img-circle medium-img-circle" id="appearing-cat" src="Images/Danglars_550x550.png">
 					</ul>
 				</div>	
 			</div> 
 			
-			<p>				
-				Music live from our turntable! </br>
-				Jazz, foxtrot, ragtime
-			</p>
+			<div id="music-and-partners">
+				<p>				
+					Music live from our turntable! </br>
+					Jazz, foxtrot, ragtime
+				</p>
 
-			<p>Proud partner of<a href="indexGrilcheeserie.html">La Grilcheeserie </a> </p>
+				<p>Proud partner of<a href="indexGrilcheeserie.html">La Grilcheeserie</a>and<a href="">Terrasse Everett</a></p>
+			</div>
 				
 			<div id="sig"> Founded in June 2015 </br>Montreal</div>
 				
 			
 		</div>
 		
+		<script>
+		// l'execute seulement on refresh, trouver pourquoi
+		/*
+			var wid = document.documentElement.clientWidth;
+			if ((wid < 992) && (wid > 767)){
+				$('.odd').css('display','inline-block');
+				$('h2').css('text-align','left');
+			}
+		*/
+		</script>
 		
+		<!-- 
+		<h3>My email form</h3>
+		<?php //echo $result; ?>
 		
+		<div id="emailform">
+					
+			<form method='post'>
+				<div class='form-group'>
+					<p class='lead'>Please get in touch - I'll get back to you as soon as I can</p>
+					<label for="name">name</label>
+					<input type="text" name="name" id="name" class='form-control' placeholder='name'/> 							
+					
+					<label for="email">email</label>
+					<input type="email" name="email" id="email" class='form-control' placeholder='email'/> 	
+					
+					
+					<input id="submitbutton" name='submit' class='btn btn-success' type="submit" value="Submit" /> 
+				</div>
+			</form>	
+		</div>
+	
+		<?php //include('form.php') ?>
+		-->
 		
     </body>
 </html>
